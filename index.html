@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Site — Верстка за макетом Figma</title>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="page">
+
+  <!-- Шапка сайту -->
+  <header class="header">
+    <div class="container header__inner">
+      <nav class="nav" aria-label="Головна навігація">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#hero" class="nav__link nav__link--active">HOME</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">ABOUT</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">WORKS</a>
+          </li>
+          <li class="nav__item">
+            <a href="#process" class="nav__link">PROCESS</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">CONTACTS</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Основний контент -->
+  <main class="main">
+
+    <!-- Перший екран (Hero) -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">Design and Layout</h1>
+          <p class="hero__description">
+            Lorem Ipsum - is a placeholder text commonly used in printing and 
+			web design. Lorem Ipsum has been the standard dummy text for Latin scripts since the 16th century.
+          </p>
+          <a href="#contacts" class="button button--primary">WRITE TO ME</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секція "Про мене" -->
+    <section class="about" id="about">
+      <div class="container about__inner">
+        <h2 class="section-title about__title">About Me</h2>
+        <p class="section-text about__text">
+          Lorem Ipsum - is a placeholder text commonly used in printing and web 
+		design. Lorem Ipsum has been the standard dummy text for Latin scripts 
+		                      since the 16th century.
+        </p>
+      </div>
+    </section>
+
+    <!-- Секція досягнень (CSS Grid) -->
+    <section class="projects" id="projects" aria-label="Статистика проєктів">
+      <div class="container">
+        <ul class="projects__grid">
+          <li class="project-card">
+            <img src="images/project-icon.png" alt="" class="project-card__icon" width="50" height="50">
+            <div class="project-card__info">
+              <h3 class="project-card__count">40+</h3>
+              <p class="project-card__label">projects</p>
+            </div>
+          </li>
+          <li class="project-card">
+            <img src="images/project-icon.png" alt="" class="project-card__icon" width="50" height="50">
+            <div class="project-card__info">
+              <h3 class="project-card__count">40+</h3>
+              <p class="project-card__label">projects</p>
+            </div>
+          </li>
+          <li class="project-card">
+            <img src="images/project-icon.png" alt="" class="project-card__icon" width="50" height="50">
+            <div class="project-card__info">
+              <h3 class="project-card__count">40+</h3>
+              <p class="project-card__label">projects</p>
+            </div>
+          </li>
+          <li class="project-card">
+            <img src="images/project-icon.png" alt="" class="project-card__icon" width="50" height="50">
+            <div class="project-card__info">
+              <h3 class="project-card__count">40+</h3>
+              <p class="project-card__label">projects</p>
+            </div>
+          </li>
+          <li class="project-card">
+            <img src="images/project-icon.png" alt="" class="project-card__icon" width="50" height="50">
+            <div class="project-card__info">
+              <h3 class="project-card__count">40+</h3>
+              <p class="project-card__label">projects</p>
+            </div>
+          </li>
+          <li class="project-card">
+            <img src="images/project-icon.png" alt="" class="project-card__icon" width="50" height="50">
+            <div class="project-card__info">
+              <h3 class="project-card__count">40+</h3>
+              <p class="project-card__label">projects</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Секція "Як я працюю" -->
+    <section class="process" id="process">
+      <div class="container process__inner">
+        <h2 class="section-title process__title">How I Work</h2>
+        <p class="section-text process__text">
+          Lorem Ipsum - is a placeholder text commonly used in printing and web 
+		design. Lorem Ipsum has been the standard dummy text for Latin scripts 
+		                      since the 16th century.
+        </p>
+        <div class="process__media">
+          <img src="images/video-preview.jpg" alt="Прев'ю відео про робочий процес" class="process__image">
+          <button type="button" class="process__play-btn" aria-label="Відтворити відео">
+            <img src="images/play-icon.svg" alt="" class="process__play-icon" width="100" height="100">
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Підвал сайту -->
+  <footer class="footer" id="contacts">
+    <div class="container footer__inner">
+      <div class="footer__info">
+        <h3 class="footer__author">Ostap Ivanenko</h3>
+        <p class="footer__copyright">(с) 2018.All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
